@@ -49,6 +49,14 @@ margin: 0 auto;
 background-position: center;
 
 }
+@media screen and (min-resolution: 2dppx),
+    (min-resolution:192dpi),
+    (-webkit-min-device-pixel-ratio:2) {
+    .logo-title{background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url("../images/peoplx2.jpg");
+    }
+}
 
 
 .team{background-color: #F4F4FD;
@@ -183,7 +191,105 @@ margin-right: auto;
     }
 
 
+.menu-open-btn{ display: block;
+    margin-left: auto;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0;
 
+}
+/* --------mobile----------- */
+.mob-menu {width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.mob-modal-close-btn {    display: flex;
+    margin-left: auto;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: #e7e9fc;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 24px;
+    height: 24px;
+}
+.mob-modal-close-btn:hover,
+.mob-modal-close-btn:focus {
+    background-color: #404BBF;
+    border: none;
+}
+
+
+.mob-modal-close-icon { transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-modal-close-btn:hover>.mob-modal-close-icon,
+.mob-modal-close-btn:focus>.mob-modal-close-icon {
+    fill: #ffff;
+}
+
+.mob-nav-link-li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mob-nav-link { font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.studio-mob { color: #404bbf;
+}
+
+.mob-address {margin-bottom: 48px;
+    margin-top: 168px;
+    font-style: normal;
+}
+
+.mob-address-link {margin-bottom: 24px;
+}
+
+.mob-address-link-tel { font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+}
+
+.mob-address-link-mailto {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mob-icon-list {display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+/* --------------------------------------------------- */
 
 
 .contact{ 
@@ -372,6 +478,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         font-size: 16px;
         font-weight: 400;
     }
+    @media(max-width:1157px){
+        .p-text{font-weight: 500;}
+    }
+
+
+
+
 .job{padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -475,8 +588,10 @@ font-weight: 400;
 }
 
 .front{display: inline-block;
+}
 
-
+@media(max-width:767px){
+    .front { text-align: center;}
 }
 .sp-footer{color: #f4f4fd;
     font-family: "Raleway",
@@ -502,6 +617,11 @@ section{
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+}
+
+@media(max-width:767px) {
+    .social-title{
+    text-align: center;}
 }
 
 .social-list {display: flex;
@@ -531,6 +651,8 @@ section{
 .icon-footer-pictures {fill: #f4f4fd;
 }
 
+@media(max-width:767px){
+    .footer-subscribe{margin-top: 72px;}}
 .footer-box{
     width: 1158px;
         padding-left: 15px;
@@ -540,10 +662,19 @@ section{
         align-items: baseline;
 }
 
+@media (max-width:767px){
+    .footer-box {
+        justify-content: center;}
+}
+
 .footer-link{margin-right: 120px;
 }
 
 .footer-input {margin-left: 80px;
+}
+
+@media(max-width:767px){
+    .footer-input{margin-top: 72px;}
 }
 
 .footer-p {font-weight: 500;
@@ -874,4 +1005,236 @@ fill: #ffffff;
 .submit-button:focus {
     background-color: #404bbf;
 
+}
+
+/*---------------!!!!!!!!!!------------*/
+@media screen and (min-width:768px) {
+.container{
+width: 768px;
+}
+
+.header{
+    padding-top: 0;
+    padding-bottom: 0;}
+
+.menu {
+    display: flex;}
+
+.ad-nav { display:flex;
+}
+
+.addr {
+    display: block;
+    }
+
+.contact-li {
+    margin-bottom: 12px;
+}
+
+.contact {
+    font-size: 12px;}
+
+.studio:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    left: 0;
+    bottom: -1px;
+}
+
+.menu-open-btn{display: none;
+}
+
+.mob-menu{display: none;
+}
+
+/*----11111111111111111111111111111111---*/
+.logo-title {
+    padding: 112px 0;
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/peoplx1.jpg);
+}
+
+@media screen and (min-resolution: 2dppx),
+(min-resolution:192dpi),
+(-webkit-min-device-pixel-ratio:2) {
+
+.logo-title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/peoplx1.jpg
+            );
+    }
+}
+
+.list-title-b {
+max-width: 496px;
+line-height: 1.07;
+font-size: 56px;
+margin-bottom: 36px;
+}
+
+/*----222222222222222222222222222222222222---*/
+.main-all {gap: 72px 24px;
+}
+
+.features-list { width:calc((100% - 24px) / 2);
+}
+
+.list-title {text-align: left;
+}
+
+/*---33333333333333333333333333333333333333---*/
+.container> .team{
+width: 584px;
+}
+
+.all-team{gap: 64px 24px;}
+
+/*---444444444444444---*/
+.photo-job {
+    width:356px;
+}
+
+.row{gap: 72px 24px;
+}
+
+/*---55555555555555555555555555555555---*/
+@media (max-width:1157px){
+.footer-box {max-width: 530px;
+}
+}
+.footer-link {
+    margin-right: 24px;
+}
+
+.footer-text {
+    max-width: 264px;
+}
+
+.footer-form {
+    gap: 24px;
+    align-items:first baseline;
+    justify-content: baseline;
+}
+
+.text-foot{ text-align: left;
+}
+
+.foot-input {
+width: 264px;
+} 
+
+.footer-input {
+    margin-top: none;
+}
+
+.modal{
+    width: 408px;
+    height: 584px;
+}
+}
+/*------11111----DESKTOP--------11111------*/
+
+@media screen and (min-width:1158px) {
+.container{
+width: 1158px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.menu {display: flex;
+}
+.mail-top {
+    margin-bottom: 0;
+}
+.contact {
+    font-size: 16px;
+}
+
+/*----desk1111111111111111111111111111111---*/
+.logo-title {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/peo.jpg);
+}
+
+@media screen and (min-resolution: 2dppx),
+(min-resolution:192dpi),
+(-webkit-min-device-pixel-ratio:2) {
+
+.logo-title {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/peox2.jpg);
+    }
+}
+
+.list-title-b {
+    margin-bottom: 48px;
+}
+
+/*---desk222222222222222222222222222222---*/
+.main-all{
+    gap:24px;
+}
+
+.main-skills{
+    padding-top: 120px;;
+    padding-bottom: 120px;}
+
+.icon-features{display: flex;
+}
+
+.features-list {
+flex-basis: calc((100% - 72px) / 4);}
+
+.list-title {
+    margin-top: 8px;
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+/*---desk33333333333333333333333333333333---*/
+
+.team{ padding: 120px 0;}
+
+.all-team {
+    gap:24px;}
+
+/*---desk4444444444444444444444444444444444---*/
+.job {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.photo-job {
+    width: calc((100% - 48px) / 3);
+}
+/*---desk 55555555555555555555555555555555---*/
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-footer {padding: 100px 0;}
+
+.footer-link {
+margin-right: 120px;
+}
+
+.footer-input {
+    margin-left: 80px;
+}
 }
