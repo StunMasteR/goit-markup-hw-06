@@ -652,7 +652,7 @@ section{
 }
 
 @media(max-width:767px){
-    .footer-subscribe{margin-top: 72px;}}
+    .footer-box{margin-top: 72px;}}
 .footer-box{
     width: 1158px;
         padding-left: 15px;
