@@ -74,22 +74,15 @@ font-weight: 700;
         padding-bottom: 96px;
 }
 
-.list-title-b {   
-    /* padding-bottom: 48px; */
-        /* margin: 0 auto; */
-        background-color: transparent;
+.list-title-b {font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 216px;
+    margin: 0 auto 72px auto;
 
-        max-width: 216px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        color: #fff;
-        text-align: center;
-        margin-bottom: 72px;
-        margin-left: auto;
-        margin-right: auto;
-    
 
 }
 /* ---------header--------- */
@@ -1214,6 +1207,12 @@ margin-right: 120px;
     gap: 40px;
 }
 
+
+.modal{
+    width: 408px;
+}
+
+
 .hewn {
 font-weight: 500;
 font-size: 16px;
@@ -1254,8 +1253,18 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+font-style: normal;
+}
+.addr{ display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
 }
 
+/* } */
 /* .address-list {
     display: flex;
     gap: 40px;
@@ -1266,6 +1275,10 @@ color: #434455;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #434455;}
+
+.contact{ 
+    }
+
 
 .addr {
     display: flex;
@@ -1303,11 +1316,10 @@ color: #434455;
 }
 
 .list-title-b {
-    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
-    margin-bottom: 36px;
-
+    max-width: 496px;
+    margin: 0 auto 36px auto;
 
 }
 
@@ -1447,6 +1459,7 @@ url(../images/peox2.jpg);
 
 .addr{display: flex;
 flex-direction: row;
+gap: 40px;
 
 }
 
@@ -1467,6 +1480,7 @@ flex-direction: row;
 /* ----------------1------------ */
 .logo-title {
 max-width: 1440px;
+/* max-height: 600px; */
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/peo.jpg);
@@ -1474,15 +1488,19 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     padding-bottom: 188px; */
 }
 .list-title-b {
-    font-size: 56px;
-        line-height: 1.07;
-                max-width: 496px;
+                font-size: 56px;
+                margin: 0 auto 48px auto;
+            
 }
 .button-a {
     margin-top: 36px;
 }
 
-
+.contact{     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+}
 /* --------------------- */
 /* ------------2-------- */
 
